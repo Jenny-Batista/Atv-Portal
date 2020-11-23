@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
+
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+    <title>Eleicoes</title>
+</head>
+<body>
+   <h1>Eleicoes- Segundo Turno </h1>
+    <div class="container">
+        <ul>
+            <?php foreach($noticias as $noticia) { ?>
+                <li><a href=" <?php echo 'http://localhost/portal/eleicoes/eleicoes/' .?>"><?php echo $noticia['titulo_url']; ?> </a> </li>  
+            <?php } ?>
+            </ul>
+    
+</body>
+</html>
